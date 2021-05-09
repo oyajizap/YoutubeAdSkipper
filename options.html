@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>Youtube Ad Skipper Extension Options</title></head>
+<body>
+
+    <Table>
+        <tr>
+            <td>Auto Skip Mode</td>
+            <td>
+                <select id="skip-mode" name="skip-mode">
+                    <option value="Auto">Auto</option>
+                    <option value="Manual">Manual</option>
+                </select>
+                </td>
+        </tr>
+        <tr>
+            <td>Normal Ad Skip Timeout(0-10):</td>
+            <td>
+                <form>
+                    <input type="number" id="ad-skip-to" min="0" max="10" disabled="disabled">
+                    (sec)
+                </form>                
+            </td>
+        </tr>
+        <tr>
+            <td>Overlay Ad Skip Timeout(1-10):</td>
+            <td>
+                <form>
+                    <input type="number" id="ol-ad-skip-to" min="1" max="10"> (sec)
+                </form>                
+            </td>
+        </tr>
+    </Table>
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</Table>
+</body>
+</html>
